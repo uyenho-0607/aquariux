@@ -40,7 +40,3 @@ class AssetTabs(Enum):
 class OrderHistoryStatus(Enum):
     CLOSED = "Closed"
     CANCELLED = "Cancelled"
-
-
-if __name__ == '__main__':
-    print(random.choice(list(ExpiryTypes)))

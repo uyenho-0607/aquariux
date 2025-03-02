@@ -53,7 +53,6 @@ def pytest_sessionfinish(session):
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_runtest_makereport(item, call):
-    logger.info("============ pytest_runtest_makereport ============ ")
     outcome = yield
     report = outcome.get_result()
 

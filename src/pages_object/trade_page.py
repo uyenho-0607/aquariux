@@ -236,12 +236,6 @@ class TradePage(BasePage):
         expect(self.__asset_column_value(option, 'status')).to_have_text(status)
 
     def verify_open_position_not_displayed(self, ord_id):
-        # expect(
-        #     self.__asset_list(AssetOrderOptions.OPEN_POSITIONS.value)
-        #     .get_by_test_id("asset-open-list-item")
-        #     .get_by_test_id("asset-open-column-order-id").get_by_text(str(ord_id))
-        # ).not_to_be_visible()
-
         expect(
             self.__asset_items(AssetTabs.OPEN_POSITIONS.value)
             .get_by_test_id("asset-open-column-order-id").get_by_text(str(ord_id))

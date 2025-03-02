@@ -15,11 +15,11 @@ class BrowserManager:
 
         match browser_type:
             case "chrome":
-                cls.__browser = plw.chromium.launch(channel="chrome", headless=headless, slow_mo=500)
+                cls.__browser = plw.chromium.launch(channel="chrome", headless=headless, slow_mo=700)
             case "firefox":
-                cls.__browser = plw.firefox.launch(headless=headless, slow_mo=500)
+                cls.__browser = plw.firefox.launch(headless=headless)
             case "webkit":
-                cls.__browser = plw.webkit.launch(headless=headless, slow_mo=500)
+                cls.__browser = plw.webkit.launch(headless=headless)
             case _:
                 raise ValueError("Invalid Browser Type !!!")
 

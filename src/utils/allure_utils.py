@@ -2,7 +2,6 @@ import json
 import os
 
 import allure
-import pytest
 
 from src.consts import ROOTDIR
 from src.data.logs import MsgLog
