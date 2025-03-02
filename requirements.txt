@@ -1,0 +1,7 @@
+pytest
+pyyaml
+allure-pytest
+colorlog
+playwright
+pytest-playwright
+colorama

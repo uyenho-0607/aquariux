@@ -1,0 +1,30 @@
+# Ignore common cache files
+*.cache
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore JavaScript/Node.js cache
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore Selenium/WebDriver cache
+.cache/
+webdriver/
+
+# Ignore VS Code cache files
+.vscode/
+*.code-workspace
+
+# Ignore JetBrains IDEs (PyCharm, WebStorm, etc.)
+.idea/
+
+# Ignore macOS and system cache files
+.DS_Store
+Thumbs.db
